@@ -37,7 +37,7 @@ module comparator_2bit(
     and(w3, ~A1, B1);                  
     and(w4, ~A0, B0, ~A1, ~B1);        
 
-    or(A_lt_B, w3, w4);
+    or(A_lt_B, w3, w4);//changes
 
     // Check for A == B
     xnor(w5, A1, B1);
